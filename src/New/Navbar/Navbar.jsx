@@ -29,19 +29,36 @@ function Navbar() {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a href="/#" className="text-black">
-                  Home{" "}
-                </a>
+                <button
+                  className="text-black"
+                  onClick={() => {
+                    window.location.href = "/";
+                  }}
+                >
+                  CREE
+                  {/* <Link to="/currency">About</Link> */}
+                </button>
               </li>
               <li tabIndex={0}>
-                <a href="/currency" className="justify-between text-black">
+                <button
+                  href="/currency"
+                  className="justify-between text-black"
+                  onClick={() => {
+                    window.location.href = "/currency";
+                  }}
+                >
                   Currency
-                </a>
+                </button>
               </li>
               <li>
-                <a href="/news" className="text-black">
+                <button
+                  className="text-black"
+                  onClick={() => {
+                    window.location.href = "/news";
+                  }}
+                >
                   News
-                </a>
+                </button>
               </li>
             </ul>
           </div>

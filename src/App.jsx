@@ -1,4 +1,5 @@
 import React from "react";
+
 import { BrowserRouter as Router } from "react-router-dom";
 import Animated from "./New/animated routes/Animated.";
 import Navbar from "./New/Navbar/Navbar";
