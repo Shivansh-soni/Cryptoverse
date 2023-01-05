@@ -15,7 +15,7 @@ function Header() {
       }}
     >
       {/* <Navbar /> */}
-      <div className="hero min-h-screen md:flex  md:justify-between md:px-32 h-full">
+      <div className="hero min-h-screen pt-5 md:pt-0 flex flex-col md:flex-row   md:justify-between md:px-32 h-full">
         <div className="hero-content  text-left text-white">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Cryptoverse</h1>

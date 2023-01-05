@@ -35,7 +35,7 @@ function Navbar() {
                     window.location.href = "/";
                   }}
                 >
-                  CREE
+                  Home
                   {/* <Link to="/currency">About</Link> */}
                 </button>
               </li>

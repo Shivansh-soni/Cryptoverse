@@ -73,7 +73,7 @@ function Currency() {
               const { uuid, name, iconUrl, btcPrice, marketCap, change } = obj;
               return (
                 <div
-                  className="items drop-shadow-2xl text-blue-900 rounded-lg  card__hover-bg hover:text-white  scale-75 md:scale-95 hover:scale-100  md:hover:scale-125 ease-in-out duration-300 "
+                  className="items drop-shadow-2xl text-blue-900 rounded-lg  card__hover-bg hover:text-white  scale-95 md:scale-95 hover:scale-125  md:hover:scale-125 ease-in-out duration-300 "
                   key={uuid}
                 >
                   <div className="aboveline">
