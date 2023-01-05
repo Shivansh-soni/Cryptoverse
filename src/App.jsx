@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Animated from "./New/animated routes/Animated.";
-import { Routes, Route, useLocation } from "react-router-dom";
+// import Animated from "./New/animated routes/Animated.";
+import { Routes, Route } from "react-router-dom";
 import { Header, News, Currency } from "./New";
 import Navbar from "./New/Navbar/Navbar";
 
