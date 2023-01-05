@@ -41,7 +41,6 @@ function Navbar() {
               </li>
               <li tabIndex={0}>
                 <button
-                  href="/currency"
                   className="justify-between text-black"
                   onClick={() => {
                     window.location.href = "/currency";
