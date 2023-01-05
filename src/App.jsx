@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 // import Animated from "./New/animated routes/Animated.";
 import { Routes, Route } from "react-router-dom";
 import { Header, News, Currency } from "./New";
@@ -27,18 +27,14 @@ const App = () => {
         </div>
 
         <div className="data bg-base-100 drop-shadow-xl ">
-          <Router>
-            <Routes
-            // location={location}
-            // key={location.pathname}
-            // initial={false}
-            // mode={"wait"}
-            >
-              <Route path="/currency" element={<Currency />} />
+          <BrowserRouter>
+            <Routes>
+              {" "}
+              <Route path="currency" element={<Currency />} />
               <Route path="/" element={<Header />} />
-              <Route path="/news" element={<News />} />
+              <Route path="news" element={<News />} />
             </Routes>
-          </Router>
+          </BrowserRouter>
         </div>
       </div>
       {/* <Footer /> */}
