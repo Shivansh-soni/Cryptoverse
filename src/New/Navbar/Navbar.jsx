@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../logo.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -29,19 +30,19 @@ function Navbar() {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a href="/#" className="text-black">
+                <Link to="#" className="text-black">
                   Home{" "}
-                </a>
+                </Link>
               </li>
               <li tabIndex={0}>
-                <a href="/currency" className="justify-between text-black">
+                <Link to="/currency" className="justify-between text-black">
                   Currency
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/news" className="text-black">
+                <Link to="/news" className="text-black">
                   News
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
