@@ -41,6 +41,19 @@ const News = () => {
           opacity: "1",
         }}
       >
+        <div className="page-loader z-999">
+          <div className="back-loader">
+            <div className="building-blocks">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
         <div className="mb-10">{/* <Navbar /> */}</div>
         {/* <h2 id="crypto-news">Crypto News</h2> */}
         <div className="news-grid px-5 ">

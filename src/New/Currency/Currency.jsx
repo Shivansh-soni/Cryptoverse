@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Compstyle.css";
 import "../Loader.css";
-
 import millify from "millify";
 import { BsCurrencyBitcoin } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -47,6 +46,19 @@ function Currency() {
           opacity: "1",
         }}
       >
+        <div className="page-loader z-999">
+          <div className="back-loader">
+            <div className="building-blocks">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
         {/* <Navbar /> */}
         <div className="shadow flex flex-col lg:flex-row flex-wrap currency__bg text-white">
           <div className="stat w-2/12">

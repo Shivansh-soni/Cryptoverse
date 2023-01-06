@@ -1,5 +1,6 @@
 import React from "react";
-import coin from "../../assets/coin.png";
+
+import a2 from "../../assets/a2.png";
 
 import { motion } from "framer-motion";
 
@@ -14,8 +15,21 @@ function Header() {
         opacity: 1,
       }}
     >
-      {/* <Navbar /> */}
-      <div className="hero min-h-screen pt-5 md:pt-0 flex flex-col md:flex-row   md:justify-between md:px-32 h-full">
+      <div className="page-loader z-999">
+        <div className="back-loader">
+          <div className="building-blocks">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="hero min-h-screen pt-5 md:pt-0 flex flex-col items-center justify-center  md:flex-row   md:justify-between md:px-32 h-full">
         <div className="hero-content  text-left text-white">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Cryptoverse</h1>
@@ -29,8 +43,8 @@ function Header() {
             </a>
           </div>
         </div>
-        <div>
-          <img src={coin} alt="" />
+        <div className="relative right-12  md:right-0">
+          <img src={a2} alt="" />
         </div>
       </div>
     </motion.div>
