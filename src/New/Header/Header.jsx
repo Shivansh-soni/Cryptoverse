@@ -15,21 +15,21 @@ function Header() {
       }}
     >
       <div className="page-loader z-999">
-        <div className="back-loader">
-          <div
-            className=""
+        <div className="">
+          {/* <div
+            
             style={{
               position: "absolute",
               top: "50%",
-              left: "55%",
+              left: "50%",
               transform: "translate(-50%, -50%)",
             }}
           >
             <Framer />
-          </div>
+          </div> */}
         </div>
       </div>
-
+      
       <div className="hero min-h-screen pt-5 md:pt-0 flex flex-col items-center justify-center  md:flex-row   md:justify-between md:px-32 h-full">
         <div className="hero-content  text-left text-white">
           <div className="max-w-md">

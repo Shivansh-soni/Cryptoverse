@@ -31,6 +31,21 @@ const News = () => {
 
   return (
     <>
+      <div className="page-loader z-999">
+        <div className="back-loader">
+          <div
+            className=""
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "55%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            <Framer />
+          </div>
+        </div>
+      </div>
       <motion.div
         className="news-container -z-1 main__bg"
         initial={{ opacity: "0%" }}
@@ -40,29 +55,11 @@ const News = () => {
           opacity: "1",
         }}
       >
-        <div className="page-loader z-999">
-          <div className="back-loader">
-            <div
-              className=""
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "55%",
-                transform: "translate(-50%, -50%)",
-              }}
-            >
-              <Framer />
-            </div>
-          </div>
-        </div>
         <div className="mb-10">{/* <Navbar /> */}</div>
-        
+
         <div className="news-grid px-5 ">
           {news.map((crypto) => {
-           
             const { name, description, url, datePublished } = crypto;
-
-           
 
             //  console.log(image.thumbnail.contentUrl);
             return (

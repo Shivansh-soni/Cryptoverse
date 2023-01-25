@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Compstyle.css";
+import "../Loader.css";
 import millify from "millify";
 import Framer from "../framer/Framer"
 import { BsCurrencyBitcoin } from "react-icons/bs";
@@ -21,20 +22,25 @@ const options = {
 function Currency() {
   const [coins, setCoins] = useState([]);
   const [stats, setStats] = useState([]);
+  const [load, setLoad] = useState(false);
 
   const getCoins = async () => {
     const response = await fetch(url, options);
     const tempcoins = await response.json();
-
+    
+    console.log(tempcoins)
     const stats = tempcoins.data.stats;
     const coins = tempcoins.data.coins;
-    // console.log(stats);
+
     setCoins(coins);
     setStats(stats);
+    setLoad(true);
+
   };
 
   useEffect(() => {
     getCoins();
+
   }, []);
 
   return (
@@ -48,21 +54,21 @@ function Currency() {
           opacity: "1",
         }}
       >
-        <div className="back-loader z-999 ">
-          
-
-          
+        
+        <div className="page-loader z-999">
           <div className="back-loader">
-            <div style={{
-              position: "absolute",
-              top: "50%",
-              left: "55%",
-              transform: "translate(-50%, -50%)",
-            }}
+            <div
+              className=""
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "55%",
+                transform: "translate(-50%, -50%)",
+              }}
             >
-                <Framer />
+
+              <Framer />
             </div>
-            
           </div>
         </div>
         {/* <Navbar /> */}
@@ -89,7 +95,7 @@ function Currency() {
           <div className="grid">
             {coins.map((obj) => {
               const { uuid, name, iconUrl, btcPrice, marketCap, change } = obj;
-              // console.log(uuid);
+              console.log("uuid");
               return (
                 <div
                   className="items drop-shadow-2xl text-blue-900 rounded-lg  card__hover-bg hover:text-white  scale-95 md:scale-95 hover:scale-125  md:hover:scale-125 ease-in-out duration-300 "

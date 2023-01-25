@@ -6,6 +6,8 @@ import { Header, News, Currency } from "./New";
 import Navbar from "./New/Navbar/Navbar";
 
 const App = () => {
+
+  
   return (
     <div>
       <div className="bg-neutral">
