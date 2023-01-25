@@ -1,8 +1,7 @@
 import React from "react";
-
 import a2 from "../../assets/a2.png";
-
 import { motion } from "framer-motion";
+import Framer from "../framer/Framer";
 
 function Header() {
   return (
@@ -17,14 +16,16 @@ function Header() {
     >
       <div className="page-loader z-999">
         <div className="back-loader">
-          <div className="building-blocks">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div
+            className=""
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "55%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            <Framer />
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import { Header, News, Currency } from "./New";
+
 import Navbar from "./New/Navbar/Navbar";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <div className="bg-neutral">
         <div className=" ">
           <Navbar />
+          
         </div>
 
         <div className="data bg-base-100 drop-shadow-xl ">
@@ -23,7 +25,7 @@ const App = () => {
           </BrowserRouter>
         </div>
       </div>
-      {/* <Footer /> */}
+      
     </div>
   );
 };

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "../Compstyle.css";
-import "../Loader.css";
 import millify from "millify";
+import Framer from "../framer/Framer"
 import { BsCurrencyBitcoin } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { motion } from "framer-motion";
+
+
 const url =
   "https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&orderDirection=desc&limit=50&offset=0";
 
@@ -26,7 +28,7 @@ function Currency() {
 
     const stats = tempcoins.data.stats;
     const coins = tempcoins.data.coins;
-    console.log(stats);
+    // console.log(stats);
     setCoins(coins);
     setStats(stats);
   };
@@ -46,17 +48,21 @@ function Currency() {
           opacity: "1",
         }}
       >
-        <div className="page-loader z-999">
+        <div className="back-loader z-999 ">
+          
+
+          
           <div className="back-loader">
-            <div className="building-blocks">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+            <div style={{
+              position: "absolute",
+              top: "50%",
+              left: "55%",
+              transform: "translate(-50%, -50%)",
+            }}
+            >
+                <Framer />
             </div>
+            
           </div>
         </div>
         {/* <Navbar /> */}
@@ -83,6 +89,7 @@ function Currency() {
           <div className="grid">
             {coins.map((obj) => {
               const { uuid, name, iconUrl, btcPrice, marketCap, change } = obj;
+              // console.log(uuid);
               return (
                 <div
                   className="items drop-shadow-2xl text-blue-900 rounded-lg  card__hover-bg hover:text-white  scale-95 md:scale-95 hover:scale-125  md:hover:scale-125 ease-in-out duration-300 "
