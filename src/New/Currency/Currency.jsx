@@ -34,7 +34,7 @@ function Currency() {
 
     setCoins(coins);
     setStats(stats);
-    setLoad(true);
+    
 
   };
 
