@@ -22,7 +22,7 @@ const options = {
 function Currency() {
   const [coins, setCoins] = useState([]);
   const [stats, setStats] = useState([]);
-  const [load, setLoad] = useState(false);
+  
 
   const getCoins = async () => {
     const response = await fetch(url, options);

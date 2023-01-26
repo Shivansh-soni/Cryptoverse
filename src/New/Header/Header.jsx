@@ -1,7 +1,7 @@
 import React from "react";
 import a2 from "../../assets/a2.png";
 import { motion } from "framer-motion";
-import Framer from "../framer/Framer";
+
 
 function Header() {
   return (
