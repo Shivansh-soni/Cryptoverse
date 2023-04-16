@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+.home-container,
+.currency-container,
+.news-container {
+
+    margin: 0;
+    height: auto;
+    padding: 10px 0;
+}
+
+.navbar__bg {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+.main__bg,
+.currency__bg,
+.card__hover-bg:hover {
+    background: -moz-linear-gradient(90deg, rgba(29, 158, 137, 1) 0%, rgba(25, 98, 120, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(29, 158, 137, 1) 0%, rgba(25, 98, 120, 1) 100%);
+    background: -o-linear-gradient(90deg, rgba(29, 158, 137, 1) 0%, rgba(25, 98, 120, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#196278', endColorstr='#1D9E89', GradientType=0);
+    background: -ms-linear-gradient(90deg, rgba(29, 158, 137, 1) 0%, rgba(25, 98, 120, 1) 100%);
+    background: linear-gradient(90deg, rgba(29, 158, 137, 1) 0%, rgba(25, 98, 120, 1) 100%);
+}
+
+.color-grad {
+    color: rgba(29, 158, 137, 1);
+}
+
+.sec-bg {
+    background-color: hsl(187, 25%, 95%);
+}
+
+
+
+
+
+
+.home-container {
+    height: auto;
+}
+
+
+.currency-container {
+    padding: 10px 0;
+}
+
+.currency-container> {
+    border: 2px solid red
+}
+
+.bars {
+
+    position: absolute;
+    display: none;
+    width: 35px;
+}
+
+.cross {
+    display: none;
+    width: 100%;
+    max-width: 15px;
+}
+
+.top {
+    padding: 2% 0 4% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50%;
+}
+
+.top>h2 {
+    font-size: 5px;
+}
+
+.heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1% 1.5% 2.5%;
+}
+
+#top10 {
+    font-size: 180%;
+    font-family: 'Nunito', sans-serif
+}
+
+
+#creds {
+    text-align: center;
+
+    margin-right: calc(100% - 285px);
+}
+
+
+/* -----------------------GRID------------------------ */
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 50px;
+    row-gap: 2.8125rem;
+    margin-left: 1.875rem;
+}
+
+.items {
+    width: 280px;
+    height: 200px;
+    background: white;
+}
+
+
+
+hr {
+    margin-top: .9375rem;
+    color: #ebecede0;
+}
+
+.aboveline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 6% 0 4%;
+}
+
+
+.icon {
+    width: 100%;
+    max-width: 2.5rem;
+}
+
+
+.rank-name {
+
+    margin-left: 15px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+}
+
+.data>p {
+    margin-left: 30px;
+    margin-top: .9375rem;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* ---
+NEWS
+------*/
+
+#crypto-news {
+    padding: 50px 0 50px 35px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 120px;
+    row-gap: 62px;
+    margin-left: 1.875rem;
+}
+
+.news-items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+
+
+
+
+.news-desc>p {
+    padding: 15px;
+    margin-top: .9375rem;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* .data {
+    height: 100%;
+    padding: 15px;
+} */
+
+.abovenewsline {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.cryptoheadline {
+
+    width: calc(100% - 120px);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.news-items>a {
+    color: black
+}
+
+.news-items>a:hover {
+    color: white;
+}
+
+
+/* -------
+LOADER
+-----------*/
+
+.intro {
+    width: 100%;
+    height: 100vh;
+
+    background: radial-gradient(111% 111% at 74.29% -11%, #A93300 0%, #005570 100%), linear-gradient(127.43deg, #00D5C8 0%, #2200AA 100%);
+    background-blend-mode: difference, normal;
+
+    animation-fill-mode: none;
+    animation: example 3.5s ease 2s 1 forwards;
+    /* animation-duration: 3.5s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; */
+}
+
+@keyframes example {
+    0% {
+        height: 100vh;
+    }
+
+    100% {
+        height: 0vh;
+
+    }
+}
+
+
+
+
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    #creds {
+        display: none;
+    }
+
+    .right {
+        padding-top: 45px;
+        background: #ebeced;
+    }
+
+    .logo-title {
+        opacity: 0;
+        background: #0f0c29;
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        width: 100vw;
+        height: 8%;
+        top: 0;
+        position: absolute;
+        left: 0;
+        padding: 15px 0 15px 15px;
+        animation: bahar 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+
+    .home-container {
+        height: 100%;
+    }
+
+    .top>p,
+    .top>h2,
+    .heading>p {
+        text-align: center;
+    }
+
+    .heading {
+        margin: 15px 0;
+    }
+
+    .grid,
+    .news-grid {
+        /* border: 2px solid red; */
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-grid {
+
+        border: 2px solid red;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .items,
+    .news-items {
+        align-self: center;
+    }
+
+    #creds {
+        text-align: center;
+        margin-left: 1.125rem;
+        width: 205px
+    }
+}
+
+
+table {
+    margin: 0 auto;
+    width: 80%;
+    border: 2px solid black;
+}
+
+table>tr>td {
+    padding: 10px;
+    border-right: 1px solid black;
+    ;
+    border-bottom: 1px solid black;
+}
+
+table>tr:nth-child(1)>td {
+    font-weight: bold;
+    text-align: center;
+    margin-right: 10px;
+    border: none;
+    border-right: 1px solid black;
+}
+
+
+table>tr>td:nth-child(1) {
+    width: 350px;
+}
+
+table>tr>td:nth-child(4) {
+    border: none;
+}
+
+td>img {
+    width: 100%;
+    max-width: 20px;
+}
+
+
+.name-td {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.crpto-name {
+
+    font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    padding-top: 25px;
+    margin-bottom: 35px;
+}
+
+.logo>img {
+    width: 100%;
+    max-width: 2.5rem;
+}
+
+.logo>p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 150%;
+}
+
+
+i {
+    margin-right: 15px;
+}
+
+
+
+
+
+.right {
+
+    width: 100vw;
+}
+
+Link {
+    text-decoration: none;
+
+}
