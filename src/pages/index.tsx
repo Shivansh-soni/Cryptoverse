@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
 const Navbar = dynamic(() => import("../Components/Navbar"), {
-  loading: () => <div>Loading...</div>,
+  ssr: false,
 });
 const Header = dynamic(() => import("../pages/header"), {
-  loading: () => <div>Loading...</div>,
+  ssr: false,
 });
 
 export default function Home() {
