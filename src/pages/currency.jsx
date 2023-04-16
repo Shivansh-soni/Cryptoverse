@@ -6,9 +6,6 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import Loader from "../Components/Loader";
-const Navbar = dynamic(() => import("../Components/Navbar"), {
-  loading: () => <div>Loading...</div>,
-});
 
 export async function getServerSideProps() {
   const url =
@@ -42,7 +39,6 @@ function Currency({ coins, stats }) {
   // }, []);
   return (
     <>
-      <Navbar />
       <div className="currency__bg fade-in">
         <div className="shadow flex flex-col lg:flex-row flex-wrap currency__bg text-white">
           <div className="stat w-2/12">
