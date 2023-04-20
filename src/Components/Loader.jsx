@@ -3,19 +3,20 @@ import { BallTriangle } from "react-loader-spinner";
 const Loader = (props) => {
   return (
     <div
-      className={`absolute top-0 w-screen h-screen -ml-2 flex items-center justify-center opacity-70
-      ${props.visible ? "bg-black z-50" : "fade-out"} `}
+      className={`flex justify-center items-center w-screen h-screen absolute  top-0 left-0 z-50 ${
+        props.visible ? "fade-in bg-black z-50" : "fade-out"
+      }`}
     >
-      <BallTriangle
-        height={100}
-        width={100}
-        radius={5}
-        color="#4fa94d"
-        ariaLabel="ball-triangle-loading"
-        wrapperClass={{}}
-        wrapperStyle=""
-        visible={true}
-      />
+      <div className="loader text-4xl ">
+        <p>loading</p>
+        <div className="words">
+          <span className="word">Coins</span>
+          <span className="word">Markets</span>
+          <span className="word">Coins</span>
+          <span className="word">News</span>
+          <span className="word"></span>
+        </div>
+      </div>
     </div>
   );
 };

@@ -24,14 +24,21 @@ body::-webkit-scrollbar {
 }
 
 .main__bg,
-.currency__bg,
+
 .card__hover-bg:hover {
     background: -moz-linear-gradient(90deg, rgba(29, 158, 137, 1) 0%, rgba(25, 98, 120, 1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(29, 158, 137, 1) 0%, rgba(25, 98, 120, 1) 100%);
     background: -o-linear-gradient(90deg, rgba(29, 158, 137, 1) 0%, rgba(25, 98, 120, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#196278', endColorstr='#1D9E89', GradientType=0);
     background: -ms-linear-gradient(90deg, rgba(29, 158, 137, 1) 0%, rgba(25, 98, 120, 1) 100%);
-    background: linear-gradient(90deg, rgba(29, 158, 137, 1) 0%, rgba(25, 98, 120, 1) 100%);
+    /* background: linear-gradient(90deg, rgba(29, 158, 137, 1) 0%, rgba(25, 98, 120, 1) 100%); */
+    /* background: linear-gradient(#31214c, #000); */
+    background: linear-gradient(to right, #6441a5, #2a0845);
+}
+
+.currency__bg {
+    background: linear-gradient(to left, #6441a5, #2a0845);
+
 }
 
 .color-grad {
@@ -114,18 +121,10 @@ body::-webkit-scrollbar {
     margin-left: 1.875rem;
 }
 
-.items {
-    width: 280px;
-    height: 200px;
-    background: white;
-}
 
 
 
-hr {
-    margin-top: .9375rem;
-    color: #ebecede0;
-}
+
 
 .aboveline {
     display: flex;
@@ -208,13 +207,7 @@ NEWS
     font-size: 20px;
 }
 
-.news-items>a {
-    color: black
-}
 
-.news-items>a:hover {
-    color: white;
-}
 
 
 /* -------
@@ -369,11 +362,6 @@ td>img {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-a {
-    text-decoration: none;
-    color: white;
-
-}
 
 
 

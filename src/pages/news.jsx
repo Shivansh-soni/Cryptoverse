@@ -28,13 +28,16 @@ export async function getServerSideProps() {
 const News = ({ news }) => {
   return (
     <>
+      <div className="px-2 main__bg p-2">
+        <Navbar />
+      </div>
       <div className="news-container -z-1 main__bg fade-in">
         <div className="news-grid px-5 ">
           {news?.map((crypto) => {
             const { name, description, url, datePublished } = crypto;
             return (
               <div
-                className="news-items text-blue-900 bg-white card__hover-bg hover:text-white drop-shadow-2xl rounded-xl scale-75 md:scale-95 hover:scale-100 md:hover:scale-125 ease-in-out duration-300"
+                className="news-items bg-accent text-secondary hover:text-white  hover:glass drop-shadow-2xl rounded-xl scale-75 md:scale-95 hover:scale-100 md:hover:scale-110 ease-in-out duration-300"
                 key={datePublished}
               >
                 <a target="_blank" rel="noreferrer" href={url}>

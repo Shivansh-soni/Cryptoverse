@@ -8,9 +8,11 @@ const Header = dynamic(() => import("../pages/header"), {
 
 export default function Home() {
   return (
-    <main className="">
-      <Navbar />
+    <div className="main__bg">
+      <div className="px-2  p-2">
+        <Navbar />
+      </div>
       <Header />
-    </main>
+    </div>
   );
 }
